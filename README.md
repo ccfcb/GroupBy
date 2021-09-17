@@ -2,24 +2,24 @@
 Solution to increase customer conversion
 
 ## Motivation
-With the surge in online shopping due to the recent pandemic, the requirements of online shopping platforms to be both user friendly and accurate for predictive inventory and stocking applications has become significant. In this project, the primary objective is to improve the predictive effectiveness of the online shopping experience.
-GroupBy has hypothesised that if the probability of the customer conversion is less than 0.2, they will not buy and if it is more than 0.8, their journey is likely to lead to a purchase. The aim of this project is therefore to personalize the shopping experience for customers for whom the conversion probability lies in the range [0.2-0.8]. 
+With the surge in online shopping due to the recent pandemic, eCommerce businesses are striving to improve their conversion rates through an enhanced understanding of customer journeys and preferences. In this project, the primary objective is to create a solution based on machine learning that can help towards this goal. 
 
 ## Our Approach
 Our solution includes:
-- a predictive model to determine the probability of customer conversions 
-- a recommendation system for personalized product recommendations in order to increase the probability of customer conversions
 
-The models were built using online e-commerce data available from:
+1. Predictive model
+The predictive model uses eCommerce data available from Kaggle ([Kaggle eCommerce Events History in Cosmetics Shop](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop) to pre-train a model, which is then used for transfer learning to a model using the GroupBy data.
 
-[Kaggle eCommerce Events History in Cosmetics Shop](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop)
+3. Recommendation system
+A recommendation system was built based on collaborative filtering to provide product recommendations using the GroupBy data.
 
-[UCI Online Retail Data Set](https://archive.ics.uci.edu/ml/datasets/online+retail)
+5. Customer classifier
+The customers were classified into clusters
 
 Subsequently, transfer learning was used to apply the learnings to GroupBy data.
 
 ## Model Deployment
-(TBC)
+A web application was built using Flask and then the model was deployed in AWS Elastic Beanstalk.
 
 ## Results
 (TBC)
