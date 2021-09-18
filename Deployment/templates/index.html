@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GroupBy ML Model</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <header>
+    <div class="content">
+	  <h3>GROUPBY MACHINE LEARNING MODEL</h3>
+    </div>
+  </header>
+
+  <div id="model" class="model-container">
+	
+    <form class="form-inline" action="{{ url_for('results')}}" method="post";>
+	  <label for="customer_id">Customer ID:</label>
+	  <input type="text" name="CustomerId" placeholder="Customer ID" required="required" />
+	  
+	  <button type="submit" class="button">Predict</button> 
+			 
+    </form>
+		
+  </div>
+
+</body>
+</html>

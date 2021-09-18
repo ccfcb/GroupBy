@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>GroupBy ML Model</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" type= "text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <header>
+    <div class="content">
+	  <h3>GROUPBY MACHINE LEARNING MODEL</h3>
+    </div>
+  </header>
+
+  <div id="model" class="model-container">
+    <div class="model-outputs">
+      <label for="customer_id">Customer ID:</label>   
+      {{customer_text}}
+	</div>	
+	<div class="model-outputs">	
+	  <label for="probability">Probability of Purchase:</label>
+	  {{prediction_text}}
+	</div>	
+	<div class="model-outputs">
+	  <label for="classification">Customer Classification:</label>
+	  {{classification_text}}
+	</div>	
+	<div class="model-outputs">	
+	  <label for="recommendation">Product Recommendations:</label>
+	  {% for table in tables %}
+        {{ table|safe }}
+      {% endfor %}
+    </div>
+  </div>
+
+</body>
+</html>
