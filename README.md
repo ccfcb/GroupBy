@@ -21,9 +21,6 @@ Subsequently, transfer learning was used to apply the learnings to GroupBy data.
 ## Model Deployment
 A web application was built using Flask and then the model was deployed in AWS Elastic Beanstalk.
 
-## Results
-(TBC)
-
 ## Our Team
 Ammar Alipo-on [(LinkedIn)](https://www.linkedin.com/in/ammar-alipo-on-82267495/)
 
