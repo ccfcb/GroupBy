@@ -8,7 +8,7 @@ With the surge in online shopping due to the recent pandemic, eCommerce business
 Our solution includes:
 
 1. Predictive model
-The predictive model was developed using eCommerce data available from Kaggle ([Kaggle eCommerce Events History in Cosmetics Shop](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop) to pre-train a model. Transfer learning was then used on the pre-trained model to build a final prediction model data supplied by GroupBy.
+The predictive model was developed using eCommerce data available from Kaggle ([Kaggle eCommerce Events History in Cosmetics Shop](https://www.kaggle.com/mkechinov/ecommerce-events-history-in-cosmetics-shop)) to pre-train a model. Transfer learning was then used on the pre-trained model to build a final prediction model data supplied by GroupBy.
 
 3. Recommendation system
 A recommendation system was built based on collaborative filtering to provide product recommendations using data supplied by GroupBy.
